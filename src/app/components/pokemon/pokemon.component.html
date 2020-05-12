@@ -1,0 +1,34 @@
+<h1>
+    <img [src]="Pokemon.img" class="img-fluid" [alt]="Pokemon.tipo"> {{ Pokemon.tipo | uppercase }} </h1>
+<hr>
+
+<div class="row">
+
+    <div class="col-md-12 ">
+        <p class="text-justify">
+            {{Pokemon.bio}}
+        </p>
+    </div>
+
+    <div class="col-md-12">
+        <dl>
+            <dt>Debil </dt>
+            <dd>{{Pokemon.debil}}</dd>
+            <dt>Efectivo</dt>
+            <dd>{{Pokemon.efectivo}}</dd>
+            <dt>No Efectivo</dt>
+            <dd>{{Pokemon.no_efectivo}}</dd>
+        </dl>
+    </div>
+
+    <div class="col-md-4 offset-4">
+
+
+        <a [routerLink]="['/pokemons']" class="btn btn-outline-danger btn-block">Regresar..</a>
+
+    </div>
+
+
+
+
+</div>

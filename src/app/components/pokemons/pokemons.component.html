@@ -1,0 +1,7 @@
+<div class="card-columns">
+
+    <!-- *ngFor="let pokemon of tiposPokemon; let i=index " -->
+
+    <app-pokemon-tarjeta [pokemon]="pokemon" [posicion]="pokemon.posicion" *ngFor="let pokemon of tiposPokemon; let i=index"></app-pokemon-tarjeta>
+
+</div>

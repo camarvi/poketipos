@@ -1,0 +1,15 @@
+<div class="card">
+    <img class="img-fluid rounded mx-auto d-block" [src]="pokemon.img" alt="pokemon.tipo">
+    <div class="card-body">
+        <h4 class="card-title text-center">Tipo {{ pokemon.tipo }}</h4>
+        <p class="card-text">{{ pokemon.bio }}
+        </p>
+
+        <!---->
+        <button (click)="verTipo()" type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+
+        <!--
+        <a [routerLink]="['/pokemon',i]" class="btn btn-outline-primary">Ver más LINK...</a>
+        -->
+    </div>
+</div>
